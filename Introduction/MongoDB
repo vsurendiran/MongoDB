@@ -1,0 +1,52 @@
+MongoDB is one of the popular NoSQL database.
+Tables are called as Collections or document.
+Records are stored in the below formats
+Array:
+index value
+ex: [ "technology",
+      "Programming",
+      "Web development"]
+
+Embedded document
+Ex:
+ Ex. {"name ": "Surendiran",
+       "Email ": "surendiranveda@gmail.com"
+     }
+Array of Embedded document
+[{"name ": "Surendiran",
+       "Email ": "surendiranveda@gmail.com"
+     }
+{"name ": "Sangeetha",
+       "Email ": "Sangeethaveda@gmail.com"
+     }
+]
+Nested Embedded document
+Ex:
+[
+{"user": "User1",
+"comment":"Great post",
+"replies":{"name ": "Surendiran","Email ": "surendiranveda@gmail.com"}
+          {"name ": "Sangeetha", "Email ": "Sangeethaveda@gmail.com"}
+}
+]
+
+ctrl+Enter => to enter the data continuously
+
+use shop => to create database
+db.products.inserOne() => To create new collection and document
+db.products.find() => To display all the records from the document
+db.products.findone() => To display first one record
+show dbs => show all the database
+db.products.insertMany([])
+db.products.find({"details,name":"Samsung"})
+db.products.updateOne({name:"Samsung"},{$set:{"price":50}})
+db.product.updateMany({})
+db.product.deleteOne({name:"Samsung"})
+db.product.deleteMany({name:"Samsung"})
+
+
+
+
+
+
+
